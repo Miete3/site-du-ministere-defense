@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>En savoir plus - Ministère de la Défense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    :root {
+      --bleu-france: #0055A4;
+      --blanc-france: #FFFFFF;
+      --rouge-france: #EF4135;
+      --gris-fonce: #333333;
+      --gris-clair: #F5F5F5;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: var(--gris-clair);
+      color: var(--gris-fonce);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--bleu-france), var(--rouge-france));
+      color: var(--blanc-france);
+      padding: 2rem 2rem 2rem 2rem;
+      border-bottom: 4px solid gold;
+      position: relative;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .btn-retour {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: 2px solid var(--blanc-france);
+      color: var(--blanc-france);
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-retour:hover {
+      background-color: var(--blanc-france);
+      color: var(--bleu-france);
+      transform: scale(1.05);
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: var(--bleu-france);
+      border-left: 5px solid var(--rouge-france);
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .content-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      background-color: var(--blanc-france);
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: 1s all;
+    }
+
+    .content-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .content-block:hover {
+      transform: scale(1.025);
+    }
+
+    .content-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .content-text h3 {
+      color: var(--bleu-france);
+      margin-top: 0;
+    }
+
+    .content-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .content-img {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .content-img img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--rouge-france);
+      color: var(--blanc-france);
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: var(--bleu-france);
+    }
+
+    footer {
+      background-color: var(--gris-fonce);
+      color: var(--blanc-france);
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .content-block {
+        flex-direction: column !important;
+      }
+
+      .btn-retour {
+        top: 10px;
+        left: 10px;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="./exemple1.html" class="btn-retour">← Accueil</a>
+    <h1>En savoir plus sur la Défense Nationale</h1>
+  </header>
+
+  <section class="section">
+    <h2>Notre Mission</h2>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Préserver la souveraineté</h3>
+        <p>Le ministère de la Défense de la République du Congo œuvre chaque jour à garantir la sécurité, l'intégrité territoriale et la paix au sein de notre nation. Nos forces armées assurent une présence stratégique sur tout le territoire.</p>
+      </div>
+      <div class="content-img">
+        <img src="./000_par7729645_0.jpg" alt="Soldats en mission sur le terrain" />
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Modernisation et Technologie</h3>
+        <p>Notre armée investit dans la technologie pour renforcer ses capacités : drones, cybersécurité, équipements de pointe... L'innovation est au cœur de nos opérations militaires du XXIe siècle.</p>
+      </div>
+      <div class="content-img">
+        <img src="./web-Défense-innovation-supériorité-autonomie-stratégique.jpg" alt="Technologies militaires modernes" />
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-text">
+        <h3>Un engagement pour la jeunesse</h3>
+        <p>Le recrutement militaire est une opportunité pour les jeunes de s'engager, de se former et de contribuer activement à la défense de la patrie. Nos centres de formation sont ouverts à tous.</p>
+      </div>
+      <div class="content-img">
+        <img src="./FSYB-Girl-smiling-at-camera.jpg" alt="Recrues militaires en entraînement" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ministère de la Défense - République du Congo. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
